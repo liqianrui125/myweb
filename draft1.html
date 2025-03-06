@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemtutor</title>
+</head>
+
+<style> 
+    .flex{
+        display: flex;
+    }
+
+    body{
+        margin:0;
+        background-color: rgba(243, 160, 247, 0.817);
+    }
+
+    .box1{
+        flex:4;
+        background-color: rgba(161, 96, 222, 0.888);
+        margin: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box2{
+        flex:3;
+        background-color: rgba(198, 225, 248, 0.748);
+        margin: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col{
+        flex-direction: column;
+    }
+
+    .zise{
+        background-color:rgb(159, 128, 207);
+    }
+
+    .mg8{
+        margin: 8px;
+    }
+    /*
+    *{
+        border: 1px solid rgb(0, 0, 0);
+    }
+        */
+    .bg{
+        background-color: rgb(243, 160, 247);
+    }
+
+
+</style>
+<body>
+    <!--标题-->
+    <div style="position: sticky; top: 0;"  class="flex bg">
+        <!--公司名和logologo-->
+        <div style="flex:1; padding: 10px; align-items: center;width: 200xp; z-index: 1; flex-direction: row;" class="flex zise mg8">
+            <p>test</p>
+
+        </div>
+        <!--标题-->
+        <div style="flex:4; justify-content: space-around; align-items: center;" class="flex mg8">
+            <p> Home</p>
+            <p>Teacher</p>
+            <p>Career</p>
+
+        </div>
+
+        <!--Sign in-->
+        <div style="flex:1; justify-content: center; align-items: center;" class="flex zise mg8">
+            <p> Sign in</p>
+
+        </div>
+
+    </div>
+
+    <!--主要内容-->
+    <div style="flex: 1;" class="flex col">
+        <!--第一行-->
+        <div class="flex mg8">
+            <!--左边图片-->
+            <div class="box1 flex">
+                <p>图片</p>
+            </div>
+            <!--右边文字-->
+            <div style="justify-content: center;" class=" flex box2">
+                <p> line</p>
+                <p> line</p>
+                <p> line</p>
+                <p> line</p>
+            </div>
+        
+        </div>
+        <!--第二行-->
+        <div class="flex mg8">
+            <!--左边文字-->
+            <div style="justify-content: center;" class=" flex box2">
+                <p> line</p>
+                <p> line</p>
+                <p> line</p>
+                <p> line</p>
+            </div>
+
+            <!--右边图片-->
+            <div class="box1 flex">
+                <p>图片</p>
+            </div>
+        
+        </div>
+
+        <!--第三行-->
+        <div class="flex mg8">
+            <!--左边图片-->
+            <div class="box1 flex">
+                <p>图片</p>
+            </div>
+            <!--右边文字-->
+            <div style="justify-content: center;" class=" flex box2">
+                <p> line</p>
+                <p> line</p>
+                <p> line</p>
+                <p> line</p>
+            </div>
+
+            
+        
+        </div>
+
+        <!--第四行-->
+        <div class="flex mg8">
+            <!--右边文字-->
+            <div style="justify-content: center;" class=" flex box2">
+                <p> line</p>
+                <p> line</p>
+                <p> line</p>
+                <p> line</p>
+            </div>
+            
+            <!--左边图片-->
+            <div class="box1 flex">
+                <p>图片</p>
+            </div>
+
+            
+        
+        </div>
+
+    </div>
+    
+</body>
+</html>

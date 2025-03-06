@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        margin:0;
+        height: 100vh;
+        background-color: rgba(208, 214, 220, 0.895);
+    }
+    
+    /** 
+    *{
+        border: 1px solid rgb(0, 0, 0);
+    }
+    */
+    
+    .flex{
+        display: flex;
+    }
+    .bai{
+        background-color: rgb(253, 253, 253);
+    }
+    .flex1{
+        flex:1;
+    }
+    .col{
+        flex-direction: column;
+    }
+    .mg8{
+        margin: 8px;
+    }
+    .mgr8{
+        margin-right: 8px;
+    }
+    .mgl8{
+        margin-left: 8px;
+    }
+    .mgt8{
+        margin-top: 8px;
+    }
+   
+    /* 当屏幕宽度小于600px时，改变布局*/
+    @media (max-width: 600px){
+    .celan{
+        display: none;
+    }
+    .changetocol{
+        flex-direction: column;
+    }
+
+    }
+
+
+</style>
+<body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2;" class="celan bai">
+        <p>
+            这是测试
+        </p>
+    </div>
+    <!--主要区域-->
+    <div class="flex1 flex col mg8">
+        <!--顶栏-->
+        <div style=" position: sticky; top:0; width: 200xp; z-index: 1; flex-direction: row;
+            justify-content: space-around; margin-bottom: 8px;" class="bai flex">
+            <p>
+                text1
+            </p>
+            <p> text2</p>
+            
+
+        </div>
+        <!--内容区域-->
+        <div class="flex1 flex changetocol" >
+            <div style="flex:3" class="flex col">
+               <!--数据-->
+               <div class="flex changetocol">
+                <div style="height: 100px;" class="flex flex1 bai mgr8">
+                    <p> data </p>
+                </div>
+                <div style="height: 100px;" class="flex flex1 bai mgr8">
+                    <p> data</p>
+                </div>
+                <div style="height: 100px;" class="flex flex1 bai mgr8">
+                    <p> data </p>
+                </div>
+                <div style="height: 100px;" class="flex flex1 bai">
+                    <p> data </p>
+                </div>
+                </div>
+               <!--列表-->
+               <div class="flex col">
+                <div style="height: 160px;" class="bai mgt8"></div>
+                <div style="height: 160px;" class="bai mgt8"></div>
+                <div style="height: 160px;" class="bai mgt8"></div>
+                <div style="height: 160px;" class="bai mgt8"></div>
+                <div style="height: 160px;" class="bai mgt8"></div>
+                <div style="height: 160px;" class="bai mgt8"></div>
+                <div style="height: 160px;" class="bai mgt8"></div>
+                <div style="height: 160px;" class="bai mgt8"></div>
+                
+
+               </div>
+            </div>
+            <!--右栏-->
+            <div style="flex:1" class="flex col">
+                <div style="height: 150px;" class="bai mgl8">
+
+                </div>
+                <div style="height: 300px;" class="bai mgl8 mgt8">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
