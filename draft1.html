@@ -13,21 +13,22 @@
 
     body{
         margin:0;
-        background-color: rgba(243, 160, 247, 0.817);
+        background-color: rgba(250, 253, 202, 0.833);
     }
 
     .box1{
         flex:4;
-        background-color: rgba(161, 96, 222, 0.888);
+        background-color: rgba(193, 164, 95, 0.888);
         margin: 10px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
 
     .box2{
         flex:3;
-        background-color: rgba(198, 225, 248, 0.748);
+        background-color: rgb(233, 234, 179);
         margin: 10px;
         flex-direction: column;
         justify-content: center;
@@ -38,8 +39,8 @@
         flex-direction: column;
     }
 
-    .zise{
-        background-color:rgb(159, 128, 207);
+    .hese{
+        background-color:rgb(161, 110, 75);
     }
 
     .mg8{
@@ -51,17 +52,28 @@
     }
         */
     .bg{
-        background-color: rgb(243, 160, 247);
+        background-color: rgb(203, 170, 108);
     }
+/* 改变布局适应手机宽度 */
+    @media (max-width: 600px){
+    .changetocol{
+        flex-direction: column;
+    }
+    .changetocolr{
+        flex-direction:column-reverse;
+    }
+
+    }
+
 
 
 </style>
 <body>
     <!--标题-->
     <div style="position: sticky; top: 0;"  class="flex bg">
-        <!--公司名和logologo-->
-        <div style="flex:1; padding: 10px; align-items: center;width: 200xp; z-index: 1; flex-direction: row;" class="flex zise mg8">
-            <p>test</p>
+        <!--公司名和logo-->
+        <div style="flex:1; padding: 10px; align-items: center;width: 200xp; z-index: 1; flex-direction: row;" class="flex hese mg8">
+            <p>Chemtutor</p>
 
         </div>
         <!--标题-->
@@ -73,7 +85,7 @@
         </div>
 
         <!--Sign in-->
-        <div style="flex:1; justify-content: center; align-items: center;" class="flex zise mg8">
+        <div style="flex:1; justify-content: center; align-items: center;" class="flex hese mg8">
             <p> Sign in</p>
 
         </div>
@@ -83,42 +95,43 @@
     <!--主要内容-->
     <div style="flex: 1;" class="flex col">
         <!--第一行-->
-        <div class="flex mg8">
+        <div class="flex mg8 changetocol">
             <!--左边图片-->
             <div class="box1 flex">
-                <p>图片</p>
+                <img src="OIP-C.jpg" alt="onho" width="200" height="260"> 
+
             </div>
             <!--右边文字-->
             <div style="justify-content: center;" class=" flex box2">
-                <p> line</p>
-                <p> line</p>
-                <p> line</p>
-                <p> line</p>
+                <p>我随机挑选了</p>
+                <p>一个</p>
+                <p>可爱的小人</p>
+                <p>放在这里</p>
             </div>
         
         </div>
         <!--第二行-->
-        <div class="flex mg8">
+        <div class="flex mg8 changetocolr">
             <!--左边文字-->
             <div style="justify-content: center;" class=" flex box2">
-                <p> line</p>
-                <p> line</p>
-                <p> line</p>
-                <p> line</p>
+                <p> 这里应该</p>
+                <p> 有</p>
+                <p> 一点</p>
+                <p> 文字</p>
             </div>
 
             <!--右边图片-->
             <div class="box1 flex">
-                <p>图片</p>
+                <img src="flask.png" alt="onho" width="240" height="200"> 
             </div>
         
         </div>
 
         <!--第三行-->
-        <div class="flex mg8">
+        <div class="flex mg8 changetocol">
             <!--左边图片-->
             <div class="box1 flex">
-                <p>图片</p>
+                <img src="OIP-C.jpg" alt="onho" width="200" height="260"> 
             </div>
             <!--右边文字-->
             <div style="justify-content: center;" class=" flex box2">
@@ -133,7 +146,7 @@
         </div>
 
         <!--第四行-->
-        <div class="flex mg8">
+        <div class="flex mg8 changetocolr">
             <!--右边文字-->
             <div style="justify-content: center;" class=" flex box2">
                 <p> line</p>
@@ -144,11 +157,17 @@
             
             <!--左边图片-->
             <div class="box1 flex">
-                <p>图片</p>
+                <img src="OIP-C.jpg" alt="onho" width="200" height="260"> 
             </div>
 
             
         
+        </div>
+
+        <div class="flex mg8 changetocol" style="justify-content: space-around;align-items: center; background-color: rgba(173, 128, 73, 0.687); margin: 0;">
+            <p>name</p>
+            <p>email: EDTUTOR@163.com</p>
+            <p>contact number: (+44) 07761925187 </p>
         </div>
 
     </div>
