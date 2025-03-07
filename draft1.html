@@ -54,6 +54,29 @@
     .bg{
         background-color: rgb(203, 170, 108);
     }
+    
+    .textstyle{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        color: rgb(62, 38, 4);
+        font-weight: bold;
+    }
+
+    .ts2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        color: rgb(62, 38, 4);
+    }
+
+    .ts3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(62, 38, 4);
+    }
+
+
 /* 改变布局适应手机宽度 */
     @media (max-width: 600px){
     .changetocol{
@@ -72,12 +95,12 @@
     <!--标题-->
     <div style="position: sticky; top: 0;"  class="flex bg">
         <!--公司名和logo-->
-        <div style="flex:1; padding: 10px; align-items: center;width: 200xp; z-index: 1; flex-direction: row;" class="flex hese mg8">
+        <div style="justify-content: center;flex:1; padding: 10px; align-items: center;width: 200xp; z-index: 1; flex-direction: row;" class="textstyle flex hese mg8">
             <p>Chemtutor</p>
 
         </div>
         <!--标题-->
-        <div style="flex:4; justify-content: space-around; align-items: center;" class="flex mg8">
+        <div style="flex:4; justify-content: space-around; align-items: center;" class="ts2 flex mg8">
             <p>Home</p>
             <p>Notes</p>
             <p>Career</p>
@@ -85,7 +108,7 @@
         </div>
 
         <!--Sign in-->
-        <div style="flex:1; justify-content: center; align-items: center;" class="flex hese mg8">
+        <div style="flex:1; justify-content: center; align-items: center;" class="ts3 flex hese mg8">
             <a href="signin.html" style="text-decoration: none; color: black;">
                 <p>Sign in</p>
             </a>

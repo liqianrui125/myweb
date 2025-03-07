@@ -46,6 +46,28 @@
     .bg{
         background-color: rgb(203, 170, 108);
     }
+
+    .textstyle{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        color: rgb(62, 38, 4);
+        font-weight: bold;
+    }
+
+    .ts2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        color: rgb(62, 38, 4);
+    }
+
+    .ts3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(62, 38, 4);
+    }
+
 /* 改变布局适应手机宽度 */
     @media (max-width: 600px){
     .changetocol{
