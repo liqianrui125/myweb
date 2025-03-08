@@ -81,6 +81,31 @@
         align-items: center;
     }
 
+    #ChemtutLogo{
+        background-color: rgb(165, 123, 60);
+        background-image: linear-gradient(to top, #462103 0%, #af692f 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor:pointer;
+        text-decoration: none;
+        font-size: 2rem;  
+        font-weight: bold;     
+    }
+
+
+
+
+
+
+
+
+
+
 /* 改变布局适应手机宽度 */
     @media (max-width: 600px){
     .changetocol{
@@ -101,6 +126,10 @@
     .Pr{
         flex-direction: row-reverse;
 
+    }
+
+    .PSmaller{
+        font-size: 12px;
     }
 
 
