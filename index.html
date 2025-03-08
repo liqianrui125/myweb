@@ -75,6 +75,14 @@
         font-weight: bold;
         color: rgb(62, 38, 4);
     }
+    .flex1{
+        flex: 1;
+    }
+
+    .center{
+        justify-content: center;
+        align-items: center;
+    }
 
 
 /* 改变布局适应手机宽度 */
@@ -84,6 +92,13 @@
     }
     .changetocolr{
         flex-direction:column-reverse;
+    }
+    .del{
+        display: none;
+    }
+
+    .Pflex4{
+        flex:4
     }
 
     }
@@ -95,20 +110,20 @@
     <!--标题-->
     <div style="position: sticky; top: 0;"  class="flex bg">
         <!--公司名和logo-->
-        <div style="justify-content: center;flex:1; padding: 10px; align-items: center;width: 200xp; z-index: 1; flex-direction: row;" class="textstyle flex hese mg8">
+        <div style="padding: 10px; z-index: 1; flex-direction: row;" class="flex1 textstyle flex hese mg8 del center">
             <p>Chemtutor</p>
 
         </div>
         <!--标题-->
         <div style="flex:4; justify-content: space-around; align-items: center;" class="ts2 flex mg8">
-            <p>Home</p>
+            <p class="del">Home</p>
             <p>Notes</p>
             <p>Career</p>
 
         </div>
 
         <!--Sign in-->
-        <div style="flex:1; justify-content: center; align-items: center;" class="ts3 flex hese mg8">
+        <div class="ts3 flex hese mg8 flex1 center Pflex4">
             <a href="signin.html" style="text-decoration: none; color: black;">
                 <p>Sign in</p>
             </a>

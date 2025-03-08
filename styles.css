@@ -68,6 +68,15 @@
         color: rgb(62, 38, 4);
     }
 
+    .flex1{
+        flex: 1;
+    }
+
+    .center{
+        justify-content: center;
+        align-items: center;
+    }
+
 /* 改变布局适应手机宽度 */
     @media (max-width: 600px){
     .changetocol{
@@ -76,6 +85,15 @@
     .changetocolr{
         flex-direction:column-reverse;
     }
+
+    .del{
+        display: none;
+    }
+
+    .Pflex4{
+        flex:4
+    }
+
 
     }
 
