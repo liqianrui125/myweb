@@ -98,6 +98,11 @@
         flex:4
     }
 
+    .Pr{
+        flex-direction: row-reverse;
+
+    }
+
 
     }
 
